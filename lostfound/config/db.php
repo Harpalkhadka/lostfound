@@ -2,7 +2,7 @@
 
 $host = "localhost";
 $user = "root";
-$password = "Hz6sQ@ppL69";
+$password = "";
 $database = "lostfound";
 $port = 3306;
 
