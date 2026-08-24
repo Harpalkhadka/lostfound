@@ -1,0 +1,42 @@
+/* ==========================================
+   VARIABLES
+========================================== */
+
+:root{
+
+    /* Main Colors */
+
+    --primary:#4338ca;
+    --primary-dark:#312e81;
+
+    --white:#ffffff;
+    --black:#000000;
+
+    --light:#f4f6f9;
+    --light-blue:#eef2ff;
+
+    --gray:#555;
+    --border:#cccccc;
+
+    /* Status */
+
+    --success:#16a34a;
+    --danger:#dc2626;
+    --warning:#f59e0b;
+
+    /* Shadow */
+
+    --shadow-sm:0 2px 10px rgba(0,0,0,.08);
+    --shadow-md:0 5px 15px rgba(0,0,0,.1);
+    --shadow-lg:0 10px 25px rgba(0,0,0,.15);
+
+    /* Radius */
+
+    --radius:6px;
+    --radius-lg:12px;
+
+    /* Transition */
+
+    --transition:.3s;
+
+}

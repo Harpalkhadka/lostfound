@@ -1,0 +1,331 @@
+/* =========================================
+   ADMIN TABLE
+========================================= */
+
+.admin-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #ffffff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+}
+
+/* Table heading */
+.admin-table th {
+    background: #4538d0;
+    color: white;
+    padding: 14px 12px;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: left;
+}
+
+/* Table data */
+.admin-table td {
+    padding: 14px 12px;
+    border-bottom: 1px solid #eeeeee;
+    color: #333;
+    font-size: 14px;
+    text-align: left;
+    vertical-align: middle;
+}
+
+/* Keep SN centered */
+.admin-table th:first-child,
+.admin-table td:first-child {
+    text-align: center;
+    width: 60px;
+}
+
+/* Type and Status centered */
+.admin-table th:nth-child(5),
+.admin-table td:nth-child(5),
+.admin-table th:nth-child(6),
+.admin-table td:nth-child(6) {
+    text-align: center;
+}
+
+/* Action centered */
+.admin-table th:last-child,
+.admin-table td:last-child {
+    text-align: center;
+    white-space: nowrap;
+}
+
+/* Row hover */
+.admin-table tbody tr:hover {
+    background: #f8f8ff;
+}
+
+
+/* =========================================
+   ADMIN ACTION BUTTONS
+========================================= */
+
+.admin-table .btn {
+    display: inline-block;
+    padding: 7px 12px;
+    margin: 2px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: white;
+    background: #4538d0;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.admin-table .btn:hover {
+    opacity: 0.85;
+}
+
+
+/* Approve button */
+.admin-table .btn-approve {
+    background: #22c55e;
+}
+
+
+/* Reject button */
+.admin-table .btn-reject {
+    background: #dc2626;
+}
+
+
+/* =========================================
+   STATUS BADGES
+========================================= */
+
+.admin-table .badge {
+    display: inline-block;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+/* Pending */
+.admin-table .badge-pending {
+    background: #f59e0b;
+    color: white;
+}
+
+/* Approved */
+.admin-table .badge-approved {
+    background: #22c55e;
+    color: white;
+}
+
+/* Rejected */
+.admin-table .badge-rejected {
+    background: #dc2626;
+    color: white;
+}
+/* ==========================================
+   CLAIM DETAILS
+========================================== */
+
+.claim-details-page {
+    max-width: 1000px;
+    margin: 30px auto;
+}
+
+
+/* Section */
+
+.details-section {
+    background: white;
+
+    padding: 25px;
+
+    margin-bottom: 20px;
+
+    border-radius: 12px;
+
+    box-shadow: var(--shadow-sm);
+}
+
+
+.details-section h3 {
+    margin-top: 0;
+
+    margin-bottom: 20px;
+
+    font-size: 20px;
+}
+
+
+/* Detail rows */
+
+.detail-row {
+    display: flex;
+    padding: 11px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.detail-row strong {
+    width: 160px;
+    flex-shrink: 0;
+}
+
+.detail-row span {
+    color: #555;
+}
+
+
+/* Claim Details Header */
+
+.details-header {
+    margin-bottom: 20px;
+}
+
+.details-header h2 {
+    margin-bottom: 12px;
+}
+
+.details-header .btn {
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+/* Description */
+
+.description-box {
+    background: #f8f9fa;
+
+    border: 1px solid #e5e5e5;
+
+    border-radius: 8px;
+
+    padding: 16px;
+
+    margin-top: 18px;
+}
+
+
+.description-box strong {
+    display: block;
+
+    margin-bottom: 8px;
+}
+
+
+.description-box p {
+    margin: 0;
+
+    line-height: 1.6;
+
+    color: #555;
+}
+
+
+/* Images */
+
+.evidence-box {
+    margin-top: 25px;
+}
+
+
+.evidence-box h4 {
+    margin-bottom: 12px;
+}
+
+
+.claim-image {
+    max-width: 400px;
+
+    max-height: 350px;
+
+    width: auto;
+
+    height: auto;
+
+    object-fit: contain;
+
+    border: 1px solid #ddd;
+
+    border-radius: 10px;
+}
+
+
+.proof-image-container {
+    text-align: center;
+
+    padding: 15px;
+
+    background: #f8f9fa;
+
+    border-radius: 10px;
+
+    border: 1px solid #ddd;
+}
+
+
+.proof-image {
+    max-width: 100%;
+
+    max-height: 500px;
+
+    width: auto;
+
+    height: auto;
+
+    object-fit: contain;
+
+    border-radius: 8px;
+}
+
+
+.no-proof {
+    color: #777;
+
+    background: #f8f9fa;
+
+    padding: 15px;
+
+    border-radius: 8px;
+}
+
+
+/* Actions */
+
+.claim-actions {
+    display: flex;
+
+    gap: 12px;
+
+    margin-bottom: 30px;
+}
+
+
+.btn-approve {
+    background: #198754;
+}
+
+
+.btn-reject {
+    background: #dc3545;
+}
+
+
+@media (max-width: 700px) {
+
+    .claim-details-page {
+        margin: 20px;
+    }
+
+    .detail-row {
+        flex-direction: column;
+
+        gap: 5px;
+    }
+
+    .detail-row strong {
+        width: auto;
+    }
+
+    .claim-actions {
+        flex-wrap: wrap;
+    }
+
+}

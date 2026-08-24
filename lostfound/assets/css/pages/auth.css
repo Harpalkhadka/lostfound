@@ -1,0 +1,685 @@
+/* ==========================================
+   AUTH PAGES
+   Login / Register / Forgot Password / Reset
+========================================== */
+
+.auth-page {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background: #f4f6f9;
+
+    padding: 40px 20px;
+    box-sizing: border-box;
+}
+
+
+/* ==========================================
+   AUTH BOX
+========================================== */
+
+.auth-box,
+.password-box {
+    width: 440px;
+    max-width: 100%;
+
+    background: white;
+
+    padding: 40px 45px;
+
+    border-radius: 12px;
+
+    box-shadow: var(--shadow-sm);
+
+    box-sizing: border-box;
+}
+
+
+/* ==========================================
+   HEADING
+========================================== */
+
+.auth-box h2,
+.password-box h2 {
+    text-align: center;
+
+    margin: 0 0 28px 0;
+
+    font-size: 25px;
+}
+
+
+/* ==========================================
+   FORM
+========================================== */
+
+.auth-box form,
+.password-box form {
+    width: 100%;
+}
+
+
+/* ==========================================
+   INPUTS
+========================================== */
+
+.auth-box input,
+.password-box input {
+    width: 100%;
+
+    height: 46px;
+
+    padding: 0 13px;
+
+    margin-bottom: 16px;
+
+    border: 1px solid #d2d2d2;
+
+    border-radius: 7px;
+
+    font-size: 15px;
+
+    box-sizing: border-box;
+
+    background: white;
+}
+
+
+.auth-box input:focus,
+.password-box input:focus {
+
+    outline: none;
+
+    border-color: var(--primary);
+
+    box-shadow:
+        0 0 0 2px rgba(67, 56, 202, 0.08);
+}
+
+
+/* ==========================================
+   FORGOT PASSWORD LINK
+========================================== */
+
+.forgot-password {
+    display: block;
+    margin: 4px 0 12px 0;
+}
+
+.forgot-password a {
+    color: var(--primary);
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.forgot-password a:hover {
+    text-decoration: underline;
+}
+/* ==========================================
+   BUTTON
+========================================== */
+
+.auth-box button,
+.password-box button {
+
+    width: 100%;
+
+    height: 46px;
+
+    margin-top: 0;
+
+    border: none;
+
+    border-radius: 7px;
+
+    background: var(--primary);
+
+    color: white;
+
+    font-size: 15px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+}
+
+
+.auth-box button:hover,
+.password-box button:hover {
+    opacity: 0.9;
+}
+
+
+/* ==========================================
+   BOTTOM TEXT
+========================================== */
+
+.auth-box > p:last-child,
+.password-box > p:last-child {
+
+    text-align: center;
+
+    margin-top: 22px;
+
+    margin-bottom: 0;
+
+    line-height: 1.6;
+}
+
+
+/* ==========================================
+   LINKS
+========================================== */
+
+.auth-box a,
+.password-box a {
+
+    color: var(--primary);
+
+    text-decoration: none;
+
+    font-weight: 500;
+}
+
+
+.auth-box a:hover,
+.password-box a:hover {
+    text-decoration: underline;
+}
+
+
+/* ==========================================
+   PASSWORD BOX
+========================================== */
+
+.password-box h2 {
+    margin-bottom: 12px;
+}
+
+
+.password-box .description {
+    text-align: center;
+
+    color: #666;
+
+    font-size: 14px;
+
+    line-height: 1.5;
+
+    margin-bottom: 25px;
+}
+
+
+.password-box .back-login {
+    display: block;
+
+    text-align: center;
+
+    margin-top: 20px;
+}
+
+
+/* ==========================================
+   MESSAGES
+========================================== */
+
+.auth-box .msg,
+.password-box .msg {
+
+    text-align: center;
+
+    margin-bottom: 20px;
+
+    line-height: 1.5;
+}
+
+
+.auth-box .msg.success,
+.password-box .msg.success {
+    color: #198754;
+}
+
+
+.auth-box .msg.error,
+.password-box .msg.error {
+    color: #dc3545;
+}
+
+/* ==========================================
+   FORGOT / RESET PASSWORD
+========================================== */
+
+.password-box {
+    width: 420px;
+    padding: 40px 45px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: var(--shadow-sm);
+    box-sizing: border-box;
+}
+
+.password-box h2 {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.password-box p {
+    text-align: center;
+    margin-bottom: 18px;
+    line-height: 1.6;
+}
+
+.password-box form {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.password-box input {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 14px 15px;
+    font-size: 15px;
+}
+
+.password-box button {
+    width: 100%;
+    padding: 14px;
+    margin-top: 5px;
+}
+
+.password-box a {
+    display: inline-block;
+    margin-top: 8px;
+}
+
+.reset-password-page .password-box form {
+    gap: 20px;
+}
+
+.reset-password-page .password-box h2 {
+    margin-bottom: 30px;
+}
+/* ==========================================
+   MOBILE
+========================================== */
+
+@media (max-width: 500px) {
+
+    .auth-page {
+        padding: 25px 15px;
+    }
+
+    .auth-box,
+    .password-box {
+
+        width: 100%;
+
+        padding: 30px 22px;
+    }
+
+}
+/* ==========================================
+   SECURITY QUESTIONS
+========================================== */
+
+.security-question {
+    background: #f5f5f5;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+
+    padding: 12px 14px;
+
+    margin-top: 6px;
+    margin-bottom: 12px;
+
+    line-height: 1.5;
+
+    font-size: 14px;
+}
+
+
+/* Security question labels */
+
+.auth-box label {
+    display: block;
+
+    margin-top: 14px;
+    margin-bottom: 6px;
+
+    font-weight: 600;
+}
+
+
+/* Better spacing for security form */
+
+.auth-box form input {
+    margin-bottom: 10px;
+}
+
+
+/* Security question page */
+
+.auth-box > p {
+    line-height: 1.5;
+}
+/* ==========================================
+   LOGIN PAGE - TWO COLUMN DESIGN
+========================================== */
+
+.login-page {
+    min-height: 100vh;
+    padding: 40px 60px;
+    background: #ffffff;
+    box-sizing: border-box;
+}
+
+
+/* ==========================================
+   LOGIN LAYOUT
+========================================== */
+
+.login-layout {
+    width: 1100px;
+    max-width: 100%;
+
+    min-height: 650px;
+
+    margin: auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 80px;
+}
+
+
+/* ==========================================
+   LEFT SIDE
+========================================== */
+
+.login-intro {
+    flex: 1;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    padding-left: 30px;
+}
+
+
+.login-intro h1 {
+    margin: 0 0 35px 0;
+
+    font-size: 48px;
+    font-weight: 700;
+
+    color: var(--primary);
+
+    letter-spacing: -1px;
+}
+
+
+.login-intro img {
+    width: 400px;
+    height: 400px;
+
+    max-width: 100%;
+
+    object-fit: contain;
+
+    border-radius: 50%;
+
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+
+    display: block;
+}
+
+.login-intro p {
+    margin-top: 25px;
+
+    font-size: 20px;
+    line-height: 1.5;
+
+    color: #444;
+
+    max-width: 450px;
+}
+
+
+/* ==========================================
+   LOGIN BOX
+========================================== */
+
+.login-box {
+    flex: 0 0 400px;
+
+    width: 400px;
+
+    padding: 40px;
+
+    border-radius: 16px;
+
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+
+    border: 1px solid #eeeeee;
+
+    box-sizing: border-box;
+}
+
+
+.login-box h2 {
+    text-align: left;
+
+    margin-bottom: 30px;
+
+    font-size: 28px;
+
+    color: #222;
+}
+
+
+/* ==========================================
+   LOGIN INPUTS
+========================================== */
+
+.login-box input {
+    height: 52px;
+
+    margin-bottom: 16px;
+
+    border: 1px solid #d5d5d5;
+
+    border-radius: 9px;
+
+    padding: 0 15px;
+
+    font-size: 15px;
+
+    transition: 0.2s;
+}
+
+
+.login-box input:focus {
+    border-color: var(--primary);
+
+    box-shadow: 0 0 0 3px rgba(67, 56, 202, 0.08);
+}
+
+
+/* ==========================================
+   LOGIN BUTTON
+========================================== */
+
+.login-box button {
+    height: 50px;
+
+    margin-top: 8px;
+
+    border-radius: 9px;
+
+    font-size: 16px;
+
+    transition: 0.2s;
+}
+
+
+.login-box button:hover {
+    opacity: 0.92;
+
+    transform: translateY(-1px);
+}
+
+
+/* ==========================================
+   FORGOT PASSWORD
+========================================== */
+
+.login-box .forgot-password {
+    text-align: center;
+
+    margin-top: 18px;
+}
+
+
+.login-box .forgot-password a {
+    font-size: 14px;
+}
+
+
+/* ==========================================
+   CREATE ACCOUNT
+========================================== */
+
+.create-account {
+    margin-top: 28px;
+
+    padding-top: 25px;
+
+    border-top: 1px solid #eeeeee;
+
+    text-align: center;
+}
+
+
+.create-account a {
+    display: block;
+
+    width: 100%;
+
+    box-sizing: border-box;
+
+    padding: 13px;
+
+    border: 1px solid var(--primary);
+
+    border-radius: 9px;
+
+    color: var(--primary);
+
+    font-weight: 600;
+
+    text-decoration: none;
+
+    transition: 0.2s;
+}
+
+
+.create-account a:hover {
+    background: var(--primary);
+
+    color: white;
+
+    text-decoration: none;
+}
+
+
+/* ==========================================
+   LOGIN MESSAGE
+========================================== */
+
+.login-box .msg {
+    margin-bottom: 18px;
+
+    font-size: 14px;
+}
+
+
+/* ==========================================
+   LOGIN MOBILE
+========================================== */
+
+@media (max-width: 850px) {
+
+    .login-page {
+        padding: 30px 20px;
+    }
+
+
+    .login-layout {
+        flex-direction: column;
+
+        gap: 40px;
+
+        min-height: auto;
+    }
+
+
+    .login-intro {
+        align-items: center;
+
+        padding-left: 0;
+
+        text-align: center;
+    }
+
+
+    .login-intro h1 {
+        font-size: 38px;
+
+        margin-bottom: 25px;
+    }
+
+
+    .login-intro img {
+        width: 420px;
+
+        height: 280px;
+    }
+
+
+    .login-intro p {
+        font-size: 17px;
+    }
+
+
+    .login-box {
+        width: 100%;
+
+        max-width: 420px;
+
+        flex: none;
+    }
+
+}
+
+
+@media (max-width: 500px) {
+
+    .login-intro img {
+        width: 100%;
+
+        height: 230px;
+    }
+
+
+    .login-box {
+        padding: 30px 25px;
+    }
+
+}

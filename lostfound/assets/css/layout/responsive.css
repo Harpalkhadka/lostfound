@@ -1,0 +1,81 @@
+/* ==========================================
+   RESPONSIVE
+========================================== */
+
+@media(max-width:768px){
+
+    .sidebar{
+
+        width:100%;
+
+        height:auto;
+
+        position:relative;
+
+    }
+
+    .main{
+
+        margin-left:0;
+
+    }
+
+    .topbar{
+
+        flex-direction:column;
+
+        gap:10px;
+
+        text-align:center;
+
+    }
+
+    .cards{
+
+        flex-direction:column;
+
+    }
+
+    .card-container{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .search-box{
+
+        flex-direction:column;
+
+    }
+
+    .search-box button{
+
+        width:100%;
+
+    }
+
+    .auth-box{
+
+        width:90%;
+
+    }
+
+    .item-form{
+
+        width:100%;
+
+    }
+
+    .profile-buttons{
+
+        flex-direction:column;
+
+    }
+
+    .role-select{
+
+        flex-direction:column;
+
+    }
+
+}

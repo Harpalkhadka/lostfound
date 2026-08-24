@@ -1,0 +1,253 @@
+/* ==========================================
+   DASHBOARD
+========================================== */
+
+.dashboard-welcome {
+    margin-bottom: 28px;
+}
+
+.dashboard-welcome h1 {
+    margin: 0 0 8px 0;
+}
+
+.dashboard-welcome p {
+    margin: 0;
+    color: #666;
+    font-size: 16px;
+}
+
+
+/* ==========================================
+   DASHBOARD CARDS
+========================================== */
+
+.dashboard-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    margin-bottom: 38px;
+}
+
+.dashboard-card {
+    text-align: center;
+    padding: 28px 20px;
+    min-height: 190px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    box-sizing: border-box;
+}
+
+
+/* Icon */
+
+.dashboard-icon {
+    width: 44px;
+    height: 44px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 10px;
+
+    font-size: 21px;
+
+    margin-bottom: 12px;
+}
+
+
+/* Card heading */
+
+.dashboard-card h2 {
+    margin: 0 0 8px 0;
+    font-size: 22px;
+}
+
+
+/* Number */
+
+.dashboard-card .card-number {
+    margin: 0 0 6px 0;
+
+    font-size: 32px;
+    font-weight: 700;
+
+    color: #222;
+}
+
+
+/* Small description */
+
+.dashboard-card span {
+    color: #777;
+    font-size: 14px;
+}
+
+
+/* ==========================================
+   ICON BACKGROUNDS
+========================================== */
+
+.users-icon {
+    background: #eeeaff;
+    color: #4b3fd1;
+}
+
+.items-icon {
+    background: #fff1dc;
+    color: #e58a00;
+}
+
+.claim-icon {
+    background: #e8f0ff;
+    color: #3b6eea;
+}
+
+.lost-icon {
+    background: #ffe7e7;
+    color: #e53935;
+}
+
+.found-icon {
+    background: #e3f7eb;
+    color: #20a45a;
+}
+
+.recovered-icon {
+    background: #e5f5f0;
+    color: #159b78;
+}
+
+
+/* ==========================================
+   QUICK ACTIONS
+========================================== */
+
+.quick-section {
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+
+.quick-section h2 {
+    margin: 0 0 6px 0;
+    font-size: 24px;
+}
+
+.quick-description {
+    margin: 0 0 22px 0;
+    color: #666;
+}
+
+
+/* Action grid */
+
+.quick-actions {
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 18px 20px;
+}
+
+
+/* Individual action */
+
+.quick-action {
+    display: flex;
+    align-items: center;
+
+    gap: 16px;
+
+    padding: 20px;
+
+    background: white;
+
+    border-radius: 12px;
+
+    text-decoration: none;
+
+    box-shadow: var(--shadow-sm);
+
+    transition: transform 0.2s ease,
+                box-shadow 0.2s ease;
+}
+
+
+.quick-action:hover {
+    transform: translateY(-2px);
+
+    box-shadow: var(--shadow-md);
+}
+
+
+/* Action icon */
+
+.quick-icon {
+    width: 46px;
+    height: 46px;
+
+    flex-shrink: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 10px;
+
+    background: #eeeaff;
+
+    color: var(--primary);
+
+    font-size: 20px;
+}
+
+
+/* Action text */
+
+.quick-action strong {
+    display: block;
+
+    margin-bottom: 5px;
+
+    color: var(--primary);
+
+    font-size: 16px;
+}
+
+
+.quick-action small {
+    color: #777;
+
+    font-size: 14px;
+}
+
+
+/* ==========================================
+   RESPONSIVE
+========================================== */
+
+@media (max-width: 1000px) {
+
+    .dashboard-cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+@media (max-width: 650px) {
+
+    .dashboard-cards {
+        grid-template-columns: 1fr;
+        gap: 18px;
+    }
+
+    .quick-actions {
+        grid-template-columns: 1fr;
+    }
+
+}

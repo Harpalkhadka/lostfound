@@ -1,0 +1,41 @@
+/* ==========================
+   FOOTER
+========================== */
+
+.footer{
+    position:fixed;
+    left:240px;
+    right:0;
+    bottom:0;
+
+    background:#fff;
+    color:#000;
+
+    border-top:1px solid #ddd;
+
+    padding:10px 15px;
+
+    text-align:center;
+
+    font-size:13px;
+
+    z-index:999;
+}
+
+.footer p{
+    margin:0;
+    line-height:1.4;
+}
+
+.footer strong{
+    color:#000;
+}
+
+@media(max-width:768px){
+
+.footer{
+    left:0;
+    font-size:12px;
+}
+
+}

@@ -1,0 +1,94 @@
+/* ==========================================
+   TABLES
+========================================== */
+
+table {
+    width: 100%;
+    background: white;
+    border-collapse: collapse;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: var(--shadow-sm);
+}
+
+/* ==========================================
+   TABLE HEADINGS
+========================================== */
+
+table th {
+    background: var(--primary);
+    color: white;
+    padding: 14px 12px;
+
+    /* Center heading */
+    text-align: center;
+
+    font-weight: 600;
+    vertical-align: middle;
+}
+
+
+/* ==========================================
+   TABLE DATA
+========================================== */
+
+table td {
+    padding: 12px;
+
+    border-bottom: 1px solid #eee;
+
+    /* Center data */
+    text-align: center;
+
+    vertical-align: middle;
+}
+
+
+/* ==========================================
+   ROW HOVER
+========================================== */
+
+table tr:hover {
+    background: #f8f8f8;
+}
+
+
+/* ==========================================
+   BUTTONS / LINKS INSIDE TABLE
+========================================== */
+
+table td a {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+
+/* ==========================================
+   STATUS / BADGES
+========================================== */
+
+table td .badge {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+
+/* ==========================================
+   IMAGE INSIDE TABLE
+========================================== */
+
+table td img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+}
+
+
+/* ==========================================
+   EMPTY TABLE MESSAGE
+========================================== */
+
+table td[colspan] {
+    text-align: center;
+    padding: 25px;
+}

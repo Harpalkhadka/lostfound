@@ -1,0 +1,23 @@
+/* ==========================================
+   SEARCH
+========================================== */
+
+.search-box{
+    display:flex;
+    gap:15px;
+    margin-bottom:25px;
+    flex-wrap:wrap;
+    align-items:center;
+}
+
+.search-box input,
+.search-box select{
+    padding:12px;
+    border:1px solid #ccc;
+    border-radius:6px;
+    min-width:180px;
+}
+
+.search-box button{
+    padding:12px 25px;
+}

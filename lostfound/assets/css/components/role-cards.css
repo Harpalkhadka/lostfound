@@ -1,0 +1,44 @@
+/* ==========================================
+   ROLE CARDS
+========================================== */
+
+.role-select{
+    display:flex;
+    gap:15px;
+    margin:20px 0;
+}
+
+.role-card{
+    flex:1;
+    cursor:pointer;
+}
+
+.role-card input{
+    display:none;
+}
+
+.role-card div{
+    border:2px solid #ddd;
+    padding:20px;
+    border-radius:10px;
+    text-align:center;
+    transition:var(--transition);
+    background:white;
+}
+
+.role-card h3{
+    margin-bottom:8px;
+    color:var(--primary);
+}
+
+.role-card p{
+    margin:0;
+    font-size:14px;
+    color:#555;
+}
+
+.role-card input:checked + div{
+    border-color:var(--primary);
+    background:#eef2ff;
+    box-shadow:0 5px 15px rgba(67,56,202,.2);
+}

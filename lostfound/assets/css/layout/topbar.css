@@ -1,0 +1,23 @@
+/* ==========================================
+   TOPBAR
+========================================== */
+
+.topbar{
+
+    background:var(--white);
+
+    padding:18px 20px;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    border-radius:10px;
+
+    box-shadow:var(--shadow-sm);
+
+    margin-bottom:25px;
+
+}

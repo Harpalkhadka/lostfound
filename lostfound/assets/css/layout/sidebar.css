@@ -1,0 +1,52 @@
+/* ==========================================
+   SIDEBAR
+========================================== */
+
+.sidebar{
+
+    position:fixed;
+
+    left:0;
+    top:0;
+
+    width:240px;
+
+    height:100vh;
+
+    background:var(--primary);
+
+    color:var(--white);
+
+    overflow:auto;
+
+}
+
+.sidebar h2{
+
+    text-align:center;
+
+    padding:25px 0;
+
+    border-bottom:1px solid rgba(255,255,255,.2);
+
+}
+
+.sidebar a{
+
+    display:block;
+
+    color:var(--white);
+
+    padding:15px 20px;
+
+    transition:var(--transition);
+
+}
+
+.sidebar a:hover{
+
+    background:var(--primary-dark);
+
+    padding-left:28px;
+
+}

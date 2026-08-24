@@ -1,0 +1,76 @@
+/* ==========================================
+   PROFILE
+========================================== */
+
+.profile-row{
+    margin-bottom:20px;
+}
+
+.profile-row label{
+    display:block;
+    font-weight:bold;
+    color:var(--primary);
+    margin-bottom:6px;
+}
+
+.profile-row p{
+    font-size:17px;
+    padding:12px;
+    background:#f5f5f5;
+    border-radius:6px;
+}
+
+.profile-buttons{
+    display:flex;
+    gap:15px;
+    margin-top:25px;
+}
+
+.profile-buttons button{
+    padding:12px 20px;
+    cursor:pointer;
+}
+
+/* ==========================================
+   EDIT PROFILE
+========================================== */
+
+.profile-card {
+    background: white;
+    width: 100%;
+    max-width: 650px;
+    padding: 30px;
+    margin-top: 20px;
+    border-radius: 12px;
+    box-shadow: var(--shadow-sm);
+    box-sizing: border-box;
+}
+
+.profile-card .form-group {
+    margin-bottom: 20px;
+}
+
+.profile-card label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+}
+
+.profile-card input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 15px;
+    box-sizing: border-box;
+}
+
+.profile-card input:disabled {
+    background: #f3f3f3;
+    color: #666;
+    cursor: not-allowed;
+}
+
+.profile-card button {
+    margin-top: 5px;
+}

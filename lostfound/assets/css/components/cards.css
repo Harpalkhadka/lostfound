@@ -1,0 +1,88 @@
+/* ==========================================
+   DASHBOARD CARDS
+========================================== */
+
+.cards{
+    display:flex;
+    flex-wrap:wrap;
+    gap:20px;
+}
+
+.card{
+    flex:1;
+    min-width:220px;
+    background:var(--white);
+    padding:25px;
+    border-radius:10px;
+    text-align:center;
+    box-shadow:var(--shadow-sm);
+    transition:var(--transition);
+}
+
+.card:hover{
+    transform:translateY(-5px);
+}
+
+.card h2{
+    color:var(--primary);
+    margin-bottom:15px;
+}
+
+.card p{
+    font-size:34px;
+    font-weight:bold;
+}
+
+/* ==========================================
+   ITEM CARDS
+========================================== */
+
+.card-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fill,minmax(300px,1fr));
+    gap:20px;
+}
+
+.item-card{
+    background:var(--white);
+    border-radius:10px;
+    padding:20px;
+    box-shadow:var(--shadow-sm);
+    transition:var(--transition);
+}
+
+.item-card:hover{
+    transform:translateY(-5px);
+}
+
+.item-card img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+    border-radius:8px;
+    margin-bottom:15px;
+    border:1px solid #ddd;
+}
+
+.item-card h3{
+    color:var(--primary);
+    margin-bottom:10px;
+}
+
+.item-card p{
+    margin:8px 0;
+    line-height:1.5;
+}
+
+/* ==========================================
+   PROFILE CARD
+========================================== */
+
+.profile-card{
+    max-width:700px;
+    background:#fff;
+    padding:30px;
+    border-radius:12px;
+    box-shadow:var(--shadow-md);
+    margin-top:20px;
+}

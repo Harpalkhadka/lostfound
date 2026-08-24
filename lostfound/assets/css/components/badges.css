@@ -1,0 +1,36 @@
+/* ==========================================
+   BADGES
+========================================== */
+
+.badge{
+    display:inline-block;
+    padding:5px 12px;
+    border-radius:20px;
+    color:white;
+    font-size:13px;
+    font-weight:bold;
+}
+
+.badge-active{
+    background:#2563eb;
+}
+
+.badge-recovered{
+    background:#16a34a;
+}
+
+.badge-approved{
+    background:#16a34a;
+}
+
+.badge-rejected{
+    background:#dc2626;
+}
+
+.badge-admin{
+    background:#7c3aed;
+}
+
+.badge-student{
+    background:#2563eb;
+}
